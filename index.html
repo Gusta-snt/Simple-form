@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+
+    <title>Wizard Academy</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div>
+        <h1>Wizard Academy</h1>
+        <p>Input your informations:</p>
+        <form action="">
+            <fieldset>
+                <label for="first-name">First name:</label>
+                <input type="text" name="first-name" id="first-name" required>
+
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name" required>
+
+                <label for="profile">Profile image:</label>
+                <input type="file" name="profile" id="profile">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="0" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="magic-essence">Magic essence:</label>
+                <select name="magic-essence" id="magic-essence" required>
+                    <option value="">--Select-one--</option>
+                    <option value="1">Earth</option>
+                    <option value="2">Water</option>
+                    <option value="3">Fire</option>
+                    <option value="4">Air</option>
+                    <option value="5">Void</option>
+                </select>
+
+                <label for="magics">How many spells can you cast? </label>
+                <input type="number" name="magics" id="magics" min="0" required>
+
+                <label for="villains">How many villains did you defeated? </label>
+                <input type="number" name="villains" id="villains" min="0" required>
+
+                <label for="magic-object">If you use any magic object, tell us which: </label>
+                <select name="magic-object" id="magic-object" required>
+                    <option value="">--Select-one--</option>
+                    <option value="1">Magic book</option>
+                    <option value="2">Magic staff</option>
+                    <option value="3">Magic gloves</option>
+                    <option value="4">Magic sword</option>
+                    <option value="5">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="knew-us">How did you knew us? </label>
+                <input type="text" name="knew-us" id="knew-us" required>
+
+                <label for="why-want-enter">Why do you want to enter in the Wizard Academy? </label>
+                <textarea name="why-want-enter" id="why-want-enter" cols="30" rows="10" style="resize: none;" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
